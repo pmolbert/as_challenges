@@ -9,7 +9,7 @@ const Notes = (props) => {
     return (
         <div style={divStyle}>
             <h5>Notes:</h5>
-            <ListGroup variant="flush" responsive>
+            <ListGroup variant="flush">
                 {props.notes.map((note, index) => {
                     return <ListGroup.Item key={index}>{note}</ListGroup.Item>
                 })}
